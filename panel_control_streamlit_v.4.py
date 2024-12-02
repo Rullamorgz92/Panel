@@ -1,15 +1,20 @@
 import streamlit as st
 
-st.set_page_config(page_title="Panel de Evaluación", layout="wide")  # Debe ser la primera línea ejecutable
+st.set_page_config(page_title="Panel de Evaluación", layout="wide")
 
-# Luego el resto de las importaciones y el código
-import pandas as pd
+# Configuración del backend gráfico para Matplotlib
+import matplotlib
+matplotlib.use('Agg')  # Backend no interactivo para evitar problemas en Streamlit
 import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
 
 @st.cache_data
 def load_data():
     return pd.read_excel("Informe_Ejecutivosv.10.xlsx")
+
+# Tu código continúa aquí...
+
 
 df = load_data()
 
