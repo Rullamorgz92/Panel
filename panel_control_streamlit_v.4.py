@@ -1,4 +1,3 @@
-# Debe estar antes de cualquier otra cosa
 import streamlit as st
 
 st.set_page_config(page_title="Panel de Evaluación", layout="wide")  # Debe ser la primera línea ejecutable
