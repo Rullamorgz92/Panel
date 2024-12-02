@@ -1,13 +1,13 @@
 
-import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
 
 # Configuración de la página (debe ser lo primero)
 st.set_page_config(page_title="Panel de Evaluación", layout="wide")
 
-# Cargar los datos desde el archivo Excel
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
 @st.cache_data
 def load_data():
     return pd.read_excel("Informe_Ejecutivosv.10.xlsx")
