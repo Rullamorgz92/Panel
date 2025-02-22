@@ -1,4 +1,4 @@
-import streamlit as st
+importimport streamlit as st
 import matplotlib
 matplotlib.use('Agg')  # Configuración del backend
 import matplotlib.pyplot as plt
